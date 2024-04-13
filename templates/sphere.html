@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Sphere Volume
+{% endblock %}
+
+{% block main %}
+    <img src="https://www.ixl.com/~media/1/wnAWAgoIYPO0Unzw4-XuKOrJVxOfMyMihAdFXAV-tpnW-gJvXuOC-RG_mSMS4Fo7MMatkNH4cyJG7O6BM5KpvM4WOc0EY_hjhBujbvwtmrg.svg" alt="sphere">
+    <p>&nbsp</p>
+    <form action="/spherevolume" method="post">
+        <input class="form-control mx-auto w-auto" name="rv" placeholder="r" type="number">
+        <p>&nbsp</p>
+        <button style="background-color: #7CB9E8;" class="btn btn-primary" type="submit">Solve</button>
+    </form>
+
+
+{% endblock %}

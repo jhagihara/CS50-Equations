@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Volume
+{% endblock %}
+
+{% block main %}
+<p class="wave">.</p>
+<img src="https://static.wixstatic.com/media/14e59d_27fbe2befdaf47a190d9469069009d04.jpg/v1/fill/w_456,h_314,al_c,lg_1,q_80,enc_auto/14e59d_27fbe2befdaf47a190d9469069009d04.jpg" alt="volume shapes">
+<p>&nbsp</p>
+<form action="/volume" method="post">
+    <div class="form-group">
+       <select name = "shapev">
+            <option>Cube</option>
+            <option>Rectangular Prism</option>
+            <option>Cylinder</option>
+            <option>Cone</option>
+            <option>Pyramid</option>
+            <option>Sphere</option>
+       </select>
+    </div>
+    <p>&nbsp</p>
+    <button style="background-color: #7CB9E8;" class="btn btn-primary" type="submit">Choose Shape</button>
+    <p>&nbsp</p>
+</form>
+<p class="wave">.</p>
+
+
+{% endblock %}

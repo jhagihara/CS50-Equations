@@ -1,0 +1,46 @@
+{% extends "layout.html" %}
+
+{% block title%}
+    Home
+{% endblock %}
+
+{% block main%}
+    <p class ="pool">.</p>
+    <h1 class = "p1">Hello, welcome to CS50 Equations!</h1>
+    <h2 class = "p1">More about the equations:</h2>
+
+    <p class="d-inline-flex gap-1">
+        <a class="btn btn-primary" style="background-color: #7CB9E8;" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Quadratic Formula</a>
+        <button class="btn btn-primary"  style="background-color: #7CB9E8;" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Area</button>
+        <button class="btn btn-primary" style="background-color: #7CB9E8;" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample3" aria-expanded="false" aria-controls="multiCollapseExample3">Volume</button>
+      </p>
+      <div class="row">
+        <div class="col">
+          <div class="collapse multi-collapse" id="multiCollapseExample1">
+            <div class="card card-body">
+                The quadratic formula helps us solve any quadratic equation. First, we bring the equation to the form ax²+bx+c=0, where a, b, and c are coefficients. Then, we plug these coefficients in the formula
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="collapse multi-collapse" id="multiCollapseExample2">
+            <div class="card card-body">
+                Area is defined as the total space taken up by a flat (2-D) surface or shape of an object. The space enclosed by the boundary of a plane figure is called its area. The area of a figure is the number of unit squares that cover the surface of a closed figure
+            </div>
+          </div>
+        </div>
+      </div>
+        <div class="col">
+          <div class="collapse multi-collapse" id="multiCollapseExample3">
+            <div class="card card-body">
+                Volume is the amount of physical space a 3D object takes up. It is the 3D equivalent of area for a 2D shape
+            </div>
+          </div>
+      <p class="pool">.</p>
+      <img src="https://i0.wp.com/boingboing.net/wp-content/uploads/2016/11/bcf.png?fit=1&resize=620%2C4000&ssl=1" alt="Confused math lady">
+      <footer style="text-align: centered;" class="p1">
+        CS50 final project by Jessica Hagihara, Long Island NY
+      </footer>
+
+
+{% endblock %}

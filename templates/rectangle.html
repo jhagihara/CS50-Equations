@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Rectangle Area
+{% endblock %}
+
+{% block main %}
+    <img src="https://www.vishay.com/images/designtools/display-diagonal-calculator/diagonal_graph.png" alt="rectangle">
+    <p>&nbsp</p>
+    <form action="/rectanglearea" method="post">
+        <input class="form-control mx-auto w-auto" name="x" placeholder="w" type="number">
+        <input class="form-control mx-auto w-auto" name="y" placeholder="l" type="number">
+        <p>&nbsp</p>
+        <button style="background-color: #7CB9E8;" class="btn btn-primary" type="submit">Solve</button>
+    </form>
+
+
+{% endblock %}

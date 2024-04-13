@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Circle Area
+{% endblock %}
+
+{% block main %}
+    <img src="https://www.gigacalculator.com/img/calculators/area-circle.png" alt="circle">
+    <p>&nbsp</p>
+    <form action="/circlearea" method="post">
+        <input class="form-control mx-auto w-auto" name="r" placeholder="r" type="number">
+        <p>&nbsp</p>
+        <button style="background-color: #7CB9E8;" class="btn btn-primary" type="submit">Solve</button>
+    </form>
+
+
+{% endblock %}

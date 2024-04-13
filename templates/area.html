@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Area
+{% endblock %}
+
+{% block main %}
+<p class="tropical">.</p>
+<img src="https://www.shmoop.com/images/prealgebra/unit4/pa.4.271.png" alt="shapes">
+<form action="/area" method="post">
+    <div class="form-group">
+        <p>&nbsp</p>
+       <select name = "shape">
+            <option>Square</option>
+            <option>Rectangle</option>
+            <option>Triangle</option>
+            <option>Circle</option>
+            <option>Trapezoid</option>
+       </select>
+    </div>
+    <p>&nbsp</p>
+    <button style="background-color: #7CB9E8;"class="btn btn-primary" type="submit">Choose Shape</button>
+    <p>&nbsp</p>
+</form>
+<p class="tropical">.</p>
+
+
+{% endblock %}

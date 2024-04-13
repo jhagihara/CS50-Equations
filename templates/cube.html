@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Cube Volume
+{% endblock %}
+
+{% block main %}
+    <img src="https://www.onlinemath4all.com/images/cubeshape1.png" alt="cube">
+    <p>&nbsp</p>
+    <form action="/cubevolume" method="post">
+        <input class="form-control mx-auto w-auto" name="xv" placeholder="a" type="number">
+        <p>&nbsp</p>
+        <button class="btn btn-primary" type="submit">Solve</button>
+    </form>
+
+
+{% endblock %}

@@ -1,0 +1,20 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Area
+{% endblock %}
+
+{% block main %}
+  <form action="/area" method="post">
+      <div class="form-group">
+        <div class="collapse navbar-collapse" id="areanav">
+          <ul class="navbar-nav me-auto mt-2">
+              <li class="nav-item"><a class="nav-link" href="square.html">Square</a></li>
+              <li class="nav-item"><a class="nav-link" href="rectangle.html">Rectangle</a></li>
+              <li class="nav-item"><a class="nav-link" href="triangle.html">Triangle</a></li>
+          </ul>
+        </div>
+      </div>
+  </form>
+
+{% endblock %}

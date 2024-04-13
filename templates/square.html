@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Square Area
+{% endblock %}
+
+{% block main %}
+    <img src="https://homework.study.com/cimages/multimages/16/45-017684878886286017834.jpg" alt="square">
+    <p>&nbsp</p>
+    <form action="/squarearea" method="post">
+        <input class="form-control mx-auto w-auto" name="x" placeholder="x" type="number">
+        <p>&nbsp</p>
+        <button style="background-color: #7CB9E8;" class="btn btn-primary" type="submit">Solve</button>
+    </form>
+
+
+{% endblock %}

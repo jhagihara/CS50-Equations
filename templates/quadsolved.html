@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Quadratic Solved
+{% endblock %}
+
+{% block main %}
+    <p class="beach">.</p>
+    <img src="https://www.gstatic.com/education/formulas2/553212783/en/quadratic_formula.svg" alt="Quad formula">
+    <p>&nbsp</p>
+    <h3 class="p2">Positive root answer: </h3>
+    {% if notreal1 != "real" %}
+        {{ notreal1 }}
+    {% else %}
+        {{ positiveans }}
+    {% endif %}
+    <p>&nbsp</p>
+    <h3 class="p2">Negative root answer: </h3>
+    {% if notreal2 != "real" %}
+        {{ notreal2 }}
+    {% else %}
+        {{ negativeans }}
+    {% endif %}
+    <p>&nbsp</p>
+    <p class="beach">.</p>
+{% endblock %}
